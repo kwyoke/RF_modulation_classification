@@ -5,13 +5,13 @@ A project on RF modulation classification using different neural architectures a
 
 I explored various neural architectures (CNN and LSTM variants), different data representations (IQ, amplitude-phase, constellation diagrams) and different RF datasets (radioML, Matlab comms toolbox) to answer the following questions:
 <ol>
-<li> What is the best model architecture? </li>
+<li>What is the best model architecture? </li>
  CNN + LSTM architecture with skip connections looks promising for time-series features. 
   
-<li> What is the best feature? </li>
+<li>What is the best feature? </li>
 Amplitude-phase time-series improves model performance at high SNR, IQ time-series improves model performance at low SNR. Constellations are only good in high SNR conditions especially for higher order modulations.
   
-<li>How well do models adapt to different channel conditions></li>
+<li>How well do models adapt to different channel conditions? </li>
 The models I tried do not adapt very well to different datasets.
 
 </ol>
@@ -64,7 +64,7 @@ This notebook compares the best performing time-series and constellation models 
 ### Classification accuracy over SNR and Confusion Matrices of best performing models
 ![rml_eval](https://github.com/interngithub2020/RF_modulation_classification/blob/master/pics/combined_snracc.png)
 
-## mode_evaluation_Matlab
+## model_evaluation_matlab
 
 This notebook compares the best performing models on a realistic but more difficut dataset I generated from Matlab (see report for details on data). Here, the models performed a lot worse especially for higher order modulations like QAMs and PSKs, and the constellation model performed significantly better than IQ models for these high order constellations. This suggests the potential of having a model that have both time-series and constellation images as input. Also, I found that models trained on one Matlab dataset didn't perform well on another, which isn't a good sign for modulation recognition in real-life.
 
