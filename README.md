@@ -46,14 +46,14 @@ This notebook builds neural architectures from literature that performed quite w
 ![time-series_snracc](https://github.com/interngithub2020/RF_modulation_classification/blob/master/pics/timeseries_snracc.png)
 
 ### Confusion matrices of IQ trained vs AP trained model
-![iq-ap-cm](https://github.com/interngithub2020/RF_modulation_classification/blob/master/pics/iq_ap_cm.png)
+![iq-ap-cm](https://github.com/interngithub2020/RF_modulation_classification/blob/master/pics/iq-ap-cm-report.png)
 
 ## constellation_classification
 
 This notebook explores constellation image representations with different resolutions and colour schemes. It was found that increasing resolution improved performance while colour didn't have much of an effect. Be careful of memory usage.
 
 ### Examples of constellation images with different resolutions and colours
-![constel_img](https://github.com/interngithub2020/RF_modulation_classification/blob/master/pics/constel_res_col.png)
+![constel_img](https://github.com/interngithub2020/RF_modulation_classification/blob/master/pics/constel_img_report.png)
 
 ### Classification accuracy over SNR of different constellation images trained models
 ![constel_snracc](https://github.com/interngithub2020/RF_modulation_classification/blob/master/pics/constel_eval.png)
