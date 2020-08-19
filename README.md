@@ -3,16 +3,16 @@ A project on RF modulation classification using different neural architectures a
 
 # Summary
 
-I explored various neural architectures (CNN and LSTM variants), different data representations (IQ, amplitude-phase, constellation diagrams) and different RF datasets (radioML, Matlab comms toolbox) to answer the following questions:
+I explored various neural architectures (CNN and LSTM variants), different data representations (IQ, amplitude-phase, constellation diagrams) and different RF datasets (radioML, Matlab comms toolbox) and tried to answer the following questions:
 <ol>
-<li>What is the best model architecture? </li>
- CNN + LSTM architecture with skip connections looks promising for time-series features. 
+<li>Q: What is the best model architecture? </li>
+Me: CNN + LSTM architecture with skip connections looks promising for time-series features. 
   
-<li>What is the best feature? </li>
-Amplitude-phase time-series improves model performance at high SNR, IQ time-series improves model performance at low SNR. Constellations are only good in high SNR conditions especially for higher order modulations.
+<li>Q: What is the best feature? </li>
+Me: Amplitude-phase time-series improves model performance at high SNR, IQ time-series improves model performance at low SNR. Constellations are only good in high SNR conditions especially for higher order modulations.
   
-<li>How well do models adapt to different channel conditions? </li>
-The models I tried do not adapt very well to different datasets.
+<li>Q: How well do models adapt to different channel conditions? </li>
+Me: The models I tried do not adapt very well to different datasets.
 
 </ol>
 
@@ -20,6 +20,7 @@ The models I tried do not adapt very well to different datasets.
 ![table](https://github.com/interngithub2020/RF_modulation_classification/blob/master/pics/tablelit.png)
 
 # Notebooks:
+Open the notebooks in Colab which has a moving content page to make it more navigable. The first part of every notebook is a lot of helper functions and setting up, can be ignored.
 
 ## data_visualisations
 
