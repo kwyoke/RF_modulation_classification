@@ -1,7 +1,22 @@
 # RF_modulation_classification
-A project on RF modulation classification using different neural architectures and RF signal representations.
+A project on RF modulation classification using different neural architectures and RF signal representations. 
 
-Table of architectures and feature types focused on in this project:
+# Summary
+
+I explored various neural architectures (CNN and LSTM variants), different data representations (IQ, amplitude-phase, constellation diagrams) and different RF datasets (radioML, Matlab comms toolbox) to answer the following questions:
+<ol>
+<li> What is the best model architecture? </li>
+ CNN + LSTM architecture with skip connections looks promising for time-series features. 
+  
+<li> What is the best feature? </li>
+Amplitude-phase time-series improves model performance at high SNR, IQ time-series improves model performance at low SNR. Constellations are only good in high SNR conditions especially for higher order modulations.
+  
+<li>How well do models adapt to different channel conditions></li>
+The models I tried do not adapt very well to different datasets.
+
+</ol>
+
+# Architectures and feature types focused on in this project:
 ![table](https://github.com/interngithub2020/RF_modulation_classification/blob/master/pics/tablelit.png)
 
 # Notebooks:
@@ -63,25 +78,32 @@ This notebook compares the best performing models on a realistic but more diffic
 [1] T. O’Shea and N. West, “Radio machine learning dataset generation with gnu
 radio,” Proceedings of the GNU Radio Conference, vol. 1, no. 1, 2016. [Online]. Available:
 https://pubs.gnuradio.org/index.php/grcon/article/view/11
+
 [2] T. J. O’Shea and J. Corgan, “Convolutional radio modulation recognition networks,” CoRR,
 vol. abs/1602.04105, 2016. [Online]. Available: http://arxiv.org/abs/1602.04105
+
 [3] N. E. West and T. J. O’Shea, “Deep architectures for modulation recognition,” CoRR, vol.
 abs/1703.09197, 2017. [Online]. Available: http://arxiv.org/abs/1703.09197
+
 [4] M. Kulin, T. Kazaz, I. Moerman, and E. D. Poorter, “End-to-end learning from spectrum data:
 A deep learning approach for wireless signal identification in spectrum monitoring applications,”
 CoRR, vol. abs/1712.03987, 2017. [Online]. Available: http://arxiv.org/abs/1712.03987
 23[5] T. J. O’Shea, T. Roy, and T. C. Clancy, “Over the air deep learning based
 radio signal classification,” CoRR, vol. abs/1712.04578, 2017. [Online]. Available:
 http://arxiv.org/abs/1712.04578
+
 [6] S. Rajendran, W. Meert, D. Giustiniano, V. Lenders, and S. Pollin, “Distributed deep
 learning models for wireless signal classification with low-cost spectrum sensors,” CoRR, vol.
 abs/1707.08908, 2017. [Online]. Available: http://arxiv.org/abs/1707.08908
+
 [7] S. Peng, H. Jiang, H. Wang, H. Alwageed, and Y. Yao, “Modulation classification using
 convolutional neural network based deep learning model,” in 2017 26th Wireless and Optical
 Communication Conference (WOCC), 2017, pp. 1–5.
+
 [8] Y. Wang, M. Liu, J. Yang, and G. Gui, “Data-driven deep learning for automatic modulation
 recognition in cognitive radios,” IEEE Transactions on Vehicular Technology, vol. 68, no. 4,
 pp. 4074–4077, 2019.
+
 [9] B. Tang, Y. Tu, Z. Zhang, and Y. Lin, “Digital signal modulation classification with data
 augmentation using generative adversarial nets in cognitive radio networks,” IEEE Access,
 vol. 6, pp. 15 713–15 722, 2018.
