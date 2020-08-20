@@ -18,7 +18,7 @@ Finally, I also found that the models tried did not adapt well to datasets expos
   
 
 # Architectures and feature types focused on in this project:
-These models were chosen because there was enough information in the papers for me to reproduce them.
+These models were chosen because they represent a wide range of popular architectures now and there was enough information in the papers for me to reproduce them.
 
 ![table](https://github.com/interngithub2020/RF_modulation_classification/blob/master/pics/tablelit.png)
 
