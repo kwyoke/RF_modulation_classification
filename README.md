@@ -6,17 +6,19 @@ A project on RF modulation classification using different neural architectures a
 I explored various neural architectures (CNN and LSTM variants), different data representations (IQ, amplitude-phase, constellation diagrams) and different RF datasets (radioML, Matlab comms toolbox) and tried to answer the following questions:
 <ol>
 <li>Q: What is the best model architecture? </li>
-Me: CNN + LSTM architecture with skip connections looks promising for time-series features. 
-  
 <li>Q: What is the best feature? </li>
-Me: Amplitude-phase time-series improves model performance at high SNR, IQ time-series improves model performance at low SNR. Constellations are only good in high SNR conditions especially for higher order modulations.
-  
 <li>Q: How well do models adapt to different channel conditions? </li>
-Me: The models I tried do not adapt very well to different datasets.
-
 </ol>
 
+Initially, I expected CNN models trained on RF data represented as coloured constellation images to be the best performing, as it made sense that CNNs would perform well on a standard image classification task. 
+
+However, it was surprising that my 1D CNNs working on time-series outperformed the constellation CNN models, particularly in low SNR conditions. In fact, I found that a CNN + LSTM architecture with skip connections looks promising for exploiting patterns in time-series features, and that amplitude-phase time-series improves classification accuracy at high SNRs.
+
+Finally, I also found that the models tried did not adapt well to datasets exposed to diferent channel conditions. Surprisingly, even when a model was trained on a dataset with more difficult channel conditions, it was not able to perform that well when tested on a dataset with less harsh channel conditions.
+  
+
 # Architectures and feature types focused on in this project:
+
 ![table](https://github.com/interngithub2020/RF_modulation_classification/blob/master/pics/tablelit.png)
 
 # Notebooks:
