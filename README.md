@@ -5,9 +5,9 @@ A project on RF modulation classification using different neural architectures a
 
 I explored various neural architectures (CNN and LSTM variants), different data representations (IQ, amplitude-phase, constellation diagrams) and different RF datasets (radioML, Matlab comms toolbox) and tried to answer the following questions:
 <ol>
-<li>Q: What is the best model architecture? </li>
-<li>Q: What is the best feature? </li>
-<li>Q: How well do models adapt to different channel conditions? </li>
+<li>What is the best model architecture? </li>
+<li>What is the best feature? </li>
+<li>How well do models adapt to different channel conditions? </li>
 </ol>
 
 Initially, I expected CNN models trained on RF data represented as coloured constellation images to be the best performing, as it made sense that CNNs would perform well on a standard image classification task. 
